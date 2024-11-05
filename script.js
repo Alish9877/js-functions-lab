@@ -120,3 +120,75 @@ const maxOfThree = (one, two, three) => {
 }
 
 console.log('Exercise 6 Result:', maxOfThree(5, 10, 8))
+
+/////////////////////
+
+/*
+Exercise 7: calculateTip()
+
+Create a function called calculateTip. It should take two arguments: 
+the bill amount and the tip percentage (as a whole number). 
+The function should return the amount of the tip.
+
+Example: calculateTip(50, 20) should return 10.
+
+Complete the exercise in the space below:
+*/
+
+const calculateTip = (bill, tip) => {
+  return (`${bill}` / 100) * `${tip}`
+}
+
+console.log('Exercise 7 Result:', calculateTip(50, 20))
+
+///////////////////////
+
+/*
+Exercise 8: convertTemperature()
+
+Write a function named convertTemperature. 
+It takes two arguments: a temperature and a string representing the 
+scale ('C' for Celsius, 'F' for Fahrenheit). 
+Convert the temperature to the other scale.
+
+Example: convertTemperature(32, 'C') should return 89.6 (Fahrenheit).
+Example: convertTemperature(32, 'F') should return 0 (Celsius).
+
+Complete the exercise in the space below:
+*/
+
+const convertTemperature = (temp, str) => {
+  if ((str = 'F')) return (temp * 9) / 5 + 32
+  else if ((str = 'C')) return ((temp - 32) * 9) / 5
+  else return false
+}
+
+console.log('Exercise 8 Result:', convertTemperature(32, 'C'))
+
+///////////////////
+/*
+Exercise 9: basicCalculator()
+
+Create a function named basicCalculator. 
+It should take three arguments: two numbers and a string representing 
+an operation ('add', 'subtract', 'multiply', 'divide'). 
+Perform the provided operation on the two numbers. 
+In operations where the order of numbers is important, 
+treat the first parameter as the first operand and the 
+second parameter as the second operand.
+
+Example: basicCalculator(10, 5, 'subtract') should return 5.
+
+Complete the exercise in the space below:
+*/
+
+const basicCalculator = (n1, n2, eq) => {
+  if (eq == 'add') return n1 + n2
+  else if (eq == 'subtract') return n1 - n2
+  else if (eq == 'subtract-rev') return n2 - n1
+  else if (eq == 'multiply') return n1 * n2
+  else if (eq == 'divide') return n1 / n2
+  else if (eq == 'divide-rev') return n2 / n1
+  else return false
+}
+console.log('Exercise 9 Result:', basicCalculator(10, 5, 'subtract'))
