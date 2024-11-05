@@ -192,3 +192,30 @@ const basicCalculator = (n1, n2, eq) => {
   else return false
 }
 console.log('Exercise 9 Result:', basicCalculator(10, 5, 'subtract'))
+
+/////////////
+
+/*
+Exercise 10: calculateGrade()
+
+Define a function called calculateGrade. 
+It should take a numerical score and return the corresponding letter 
+grade (A, B, C, D, F). 
+
+For example, 90 and above yields an 'A', 80-89 is a 'B', 
+and 70-79 is a 'C', 60-69 is a 'D' and anything lower than a 60 is an 'F'.
+
+Example: calculateGrade(100) should return A.
+
+Complete the exercise in the space below:
+*/
+
+const calculateGrade = (grade) => {
+  if (grade >= 90) return 'A'
+  else if (grade >= 80 && grade <= 89) return 'B'
+  else if (grade >= 70 && grade <= 79) return 'C'
+  else if (grade >= 60 && grade <= 69) return 'D'
+  else return 'F'
+}
+
+console.log('Exercise 10 Result:', calculateGrade(59))
